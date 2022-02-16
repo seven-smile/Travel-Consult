@@ -1,4 +1,4 @@
-/*import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(() => ({
   paper: {
@@ -16,7 +16,7 @@ export default makeStyles(() => ({
 }));
 
 
-/* this might or might not be part , review well later*/
+/* this is not part , review well later*/
 
 /*export default [
   {
