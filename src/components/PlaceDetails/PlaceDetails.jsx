@@ -6,4 +6,4 @@ const PlaceDetails = () => {
     );
 }
 
-export default PlaceDetails
+export default PlaceDetails;
