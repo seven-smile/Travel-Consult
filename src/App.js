@@ -32,8 +32,8 @@ const App = () => {
                 <Grid item xs={12} md={8}>
                     <Map 
                         setCoordinates = {setCoordinates}
-                        setBounds = {setCoordinates}
-                        coordinates = { coordinates} 
+                        setBounds = {setBounds}
+                        coordinates = { coordinates } 
                     />
 
                 </Grid>
