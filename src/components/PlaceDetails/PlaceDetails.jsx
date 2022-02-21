@@ -10,7 +10,13 @@ const PlaceDetails = ({place}) => {
     console.log(place);
 
     return (
-        <h1>{place.name}</h1>
+        <Card elevation={6}>
+            <CardMedia
+            style={{ height: 350 }}
+            image={ place.photo ? place.photo.image.target.url: ''}
+            title={placae.name} 
+            />
+        </Card>
     );
 }
 
