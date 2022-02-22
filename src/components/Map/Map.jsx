@@ -10,20 +10,16 @@ const Map = ( { setCoordinates, setBounds, coordinates }) => {
     const classes = useStyle();
     const isMobile = useMediaQuery('(min-width:600px)');
 
-   
-
     return (
         <div className={classes.mapContainer}>
             <GoogleMapReact
-                bootstrapURLKeys={{key: '' }}
+                bootstrapURLKeys={{key: 'AIzaSyAf5uhR5z_8O8Mn-AxfOMggxZ1GQlQ5_hs' }}
                 defaultCenter={coordinates}
                 center={coordinates}
                 defaultZoom={14}
                 margin={[50, 50, 50,50]}
-                options={'   '}
+                options={''}
                 onChange={(e) => {
-                    console.log(e);
-
                     setCoordinates({ lat: e.center.lat, lng: e.center.lng });
                     setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw});
                 }}
