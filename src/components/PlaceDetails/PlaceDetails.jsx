@@ -17,9 +17,11 @@ const PlaceDetails = ({place}) => {
             title={placae.name} 
             />
             <CardContent>
-                <Typography gutterBottom varient = 'h5'></Typography>
+                <Typography gutterBottom varient = 'h5'>
+                    {place.name}
+                </Typography>
             </CardContent>
-            
+
         </Card>
     );
 }
