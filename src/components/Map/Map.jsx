@@ -63,9 +63,9 @@ const Map = ( { setCoordinates, setBounds, coordinates }) => {
                     console.log(e);
 
                     setCoordinates({ lat: e.center.lat, lng: e.center.lng });
-                    /*setBounds( { ne: e.marginBounds.ne, sw: e.marginBounds.sw})*/
+                    setBounds( { ne: e.marginBounds.ne, sw: e.marginBounds.sw})
                 }}
-                 onChildClick={''}
+                onChildClick={''}
             >
                     
             </GoogleMapReact>

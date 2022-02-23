@@ -72,7 +72,7 @@ const App = () => {
     }, []);
 
     useEffect(() => {
-        console.log(coordinates, bounds);
+        console.log();
 
         getPlacesData()
             .then((data) => {
