@@ -43,15 +43,17 @@ import Rating from '@material-ui/lab';
 
 import useStyle from './styles';
 
-
+/*this seems to be where the problem is this below  { setCoordinates, setBounds, coordinates } */
 const Map = ( { setCoordinates, setBounds, coordinates }) => {
     const classes = useStyle();
     const isMobile = useMediaQuery('(min-width:600px)');
 
+    
+
     return (
         <div className={classes.mapContainer}>
             <GoogleMapReact
-                bootstrapURLKeys={{key: '' }}
+                bootstrapURLKeys={{key: 'AIzaSyAf5uhR5z_8O8Mn-AxfOMggxZ1GQlQ5_hs' }}
                 defaultCenter={coordinates}
                 center={coordinates}
                 defaultZoom={14}
@@ -61,8 +63,9 @@ const Map = ( { setCoordinates, setBounds, coordinates }) => {
                     console.log(e);
 
                     setCoordinates({ lat: e.center.lat, lng: e.center.lng });
+                    /*setBounds( { ne: e.marginBounds.ne, sw: e.marginBounds.sw})*/
                 }}
-                onChildClick={''}
+                 onChildClick={''}
             >
                     
             </GoogleMapReact>
