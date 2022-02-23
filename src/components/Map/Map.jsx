@@ -43,7 +43,6 @@ import Rating from '@material-ui/lab';
 
 import useStyle from './styles';
 
-/*this seems to be where the problem is this below  { setCoordinates, setBounds, coordinates } */
 const Map = ( { setCoordinates, setBounds, coordinates }) => {
     const classes = useStyle();
     const isMobile = useMediaQuery('(min-width:600px)');
@@ -60,8 +59,6 @@ const Map = ( { setCoordinates, setBounds, coordinates }) => {
                 margin={[50, 50, 50,50]}
                 options={''}
                 onChange={(e) => {
-                    console.log(e);
-
                     setCoordinates({ lat: e.center.lat, lng: e.center.lng });
                     setBounds( { ne: e.marginBounds.ne, sw: e.marginBounds.sw})
                 }}
