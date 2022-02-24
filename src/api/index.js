@@ -41,12 +41,18 @@ export const getPlacesData =  async () => {
           tr_latitude: '12.838442',
           bl_longitude: '109.095887',
           tr_longitude: '109.149359',
-          // THE FIGURES ABOVE SHOULD BE CHANGED TO SW.LAT, NE.LAT,ETC.
 
+           // THE FIGURES ABOVE SHOULD BE CHANGED TO SW.LAT, NE.LAT,ETC.
+
+          // bl_latitude: sw.lat,
+          // tr_latitude: ne.lat,
+          // bl_longitude: sw.lng,
+          // tr_longitude: ne.lng,
+         
         },
         headers: {
-          'x-rapidapi-host': ' ',
-          'x-rapidapi-key': ''
+          'x-rapidapi-host': 'travel-advisor.p.rapidapi.com ',
+          'x-rapidapi-key': 'bb5deb85acmshbc8005000bdf8e2p136515jsne1103c53df0c'
         }
       });
         
