@@ -31,7 +31,7 @@ const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary'
 
 //ERROR BELOW( INSIDE THE ASYNC FUNCTION . IT IS (sw, ne)  IN THE VIDEO)
 export const getPlacesData =  async (sw, ne) => {
-export const getPlacesData =  async () => {
+// export const getPlacesData =  async () => {
 //ERROR ABOVE( INSIDE THE ASYNC FUNCTION . IT IS (sw, ne)  IN THE VIDEO)
 
   try {

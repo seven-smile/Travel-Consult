@@ -50,7 +50,7 @@ const App = () => {
 
 export default App;*/
 
-import React, { useEffect, useState }  from "react";
+import React, { useState, useEffect }  from "react";
 import { CssBaseline, Grid } from "@material-ui/core";
 
 import { getPlacesData } from './api';
@@ -63,7 +63,7 @@ const App = () => {
     const [ places, setPlaces] = useState([]);
 
     const [ coordinates, setCoordinates ] = useState({});
-    const [ bounds, setBounds ] = useState( null);
+    const [ bounds, setBounds ] = useState( null );
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(({ coords: {latitude, longitude} }) => {
@@ -74,7 +74,7 @@ const App = () => {
     useEffect(() => {
         // ERROR BELOW HERE
         
-        getPlacesData()
+        getPlacesData(setBounds.ne, setBounds.sw)
 
         // ERROR ABOVE HERE 
             .then((data) => {
