@@ -74,7 +74,7 @@ const App = () => {
     useEffect(() => {
         // ERROR BELOW HERE
         
-        getPlacesData(setBounds.ne, setBounds.sw)
+        getPlacesData()
 
         // ERROR ABOVE HERE 
             .then((data) => {
