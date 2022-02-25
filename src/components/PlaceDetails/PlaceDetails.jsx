@@ -60,6 +60,7 @@ const PlaceDetails = ({place}) => {
                 {place?.awards?.map((award) => (
                     <Box my={1} display='flex' justifyContent='space-between' alignItem="center">
                     <img src={award.images.small} alt={award.display_name} />
+                    <Typography variant="subtitle2" color="textSecondary">{award.display_name}</Typography>
                     </Box>
                 ))}
             
