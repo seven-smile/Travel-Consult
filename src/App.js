@@ -72,11 +72,7 @@ const App = () => {
     }, []);
 
     useEffect(() => {
-        // ERROR BELOW HERE
-        
         getPlacesData(bounds.sw, bounds.ne)
-
-        // ERROR ABOVE HERE 
             .then((data) => {
                 console.log(data);
 
