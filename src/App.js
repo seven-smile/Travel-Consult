@@ -37,6 +37,7 @@ const App = () => {
                 <Grid item xs={12} md={4}>
                     <List 
                         places = {places}
+                        childClicked = {childClicked}
                     />
                 </Grid>
                 <Grid item xs={12} md={8}>
@@ -44,7 +45,8 @@ const App = () => {
                         setCoordinates = {setCoordinates}
                         setBounds = {setBounds}
                         coordinates = { coordinates }
-                        places = {places}   
+                        places = {places}
+                        setChildClicked={setChildClicked}   
                     />
 
                 </Grid> 
