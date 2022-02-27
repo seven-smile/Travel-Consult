@@ -25,7 +25,7 @@ const Map = ( { setCoordinates, setBounds, coordinates, places}) => {
                     setCoordinates({ lat: e.center.lat, lng: e.center.lng });
                     setBounds( { ne: e.marginBounds.ne, sw: e.marginBounds.sw})
                 }}
-                onChildClick={''}
+                onChildClick={(child) => {}}
             >
                 {places?.map((place, i) => (
                     <div
