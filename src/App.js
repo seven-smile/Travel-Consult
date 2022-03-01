@@ -30,7 +30,7 @@ const App = () => {
                 setPlaces(data);
                 setIsLoading(false);
             })
-        }, [type, coordinates, bounds]);
+        }, [type,coordinates, bounds]);
 
     return (
         <>
@@ -43,9 +43,10 @@ const App = () => {
                         childClicked = {childClicked}
                         isLoading={isLoading}
                         type = {type}
-                        setType = { setType}
-                        rating = { rating}
-                        setRating = { setRating}
+                        setType = {setType}
+                        rating = {rating}
+                        setRating = {setRating}
+
                     />
                 </Grid>
                 <Grid item xs={12} md={8}>
