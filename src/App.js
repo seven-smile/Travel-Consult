@@ -30,7 +30,7 @@ const App = () => {
                 setPlaces(data);
                 setIsLoading(false);
             })
-        }, [coordinates, bounds]);
+        }, [type, coordinates, bounds]);
 
     return (
         <>
