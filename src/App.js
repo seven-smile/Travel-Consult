@@ -39,7 +39,7 @@ const App = () => {
                 setFilteredPlaces([])
                 setIsLoading(false);
             })
-        }, [type,coordinates, bounds]);
+        }, [type, coordinates, bounds]);
 
     return (
         <>

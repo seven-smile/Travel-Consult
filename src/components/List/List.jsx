@@ -35,7 +35,7 @@ const List = ({places, childClicked, isLoading, type,setType, rating, setRating 
         </Select>
       </FormControl>
       <FormControl className={classes.formControl}>
-        <InputLabel> Type</InputLabel>
+        <InputLabel> Rating </InputLabel>
         <Select value={rating} onChange={(e) => setRating(e.target.value)}>
          <MenuItem value={0}>ALL</MenuItem>
            <MenuItem value={3}>Above 3.0</MenuItem>
@@ -48,7 +48,7 @@ const List = ({places, childClicked, isLoading, type,setType, rating, setRating 
           <Grid item key={i} xs={12}>
             <PlaceDetails
               place={place}
-              selected = {Number(childClicked) == i }
+              selected = {Number(childClicked) === i }
               refProp = {elRefs[i]}
             />
           </Grid>
