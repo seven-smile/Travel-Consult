@@ -63,7 +63,7 @@ const App = () => {
                         setCoordinates = {setCoordinates}
                         setBounds = {setBounds}
                         coordinates = { coordinates }
-                        places = {filteredPlaces.lenght ? filteredPlaces :places}
+                        places = {filteredPlaces.lenght ? filteredPlaces : places}
                         setChildClicked={setChildClicked}   
                     />
 
