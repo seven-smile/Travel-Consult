@@ -10,14 +10,8 @@ const Header = () => {
 
   return (
     <AppBar position='static'>
-      <Toolbar classNyhdk.dbdv>
-                  <SearchIcon />
-                </div>
-                <InputBase placeholder='Search ...' classes={{root: classes.inputRoot, input: classes.inputInput}} />
-              </div>
-         {/* </Autocomplete> */
-        /*</Box>
-      </Toolbar>
+      <Toolfiubroor nnlk  
+        o
     </AppBar> 
     
   );
