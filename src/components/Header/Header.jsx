@@ -7,11 +7,7 @@ import useStyles from './styles';
 
 const Header = () => {
   const classes = useStyles();
-
-  return (
-    <AppBar position='static'>
-      <Toolfiubroor nnlk  
-        o
+hkbf urjjj jrujr
     </AppBar> 
     
   );
