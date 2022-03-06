@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Autocomplete } from '@react-google-maps/api';
 import { AppBar, Toolbar, Typography, InputBase, Box } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
@@ -7,7 +7,11 @@ import useStyles from './styles';
  
 const Header = () => {
   const classes = useStyles();
+  const [autoComplete, setAutoComplete] = useState(null);
   
+  const onLoad = () => {
+
+  }
   return (
     <AppBar position='static'>
       <Toolbar className={classes.toolbar}>
