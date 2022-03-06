@@ -9,9 +9,8 @@ const Header = () => {
   const classes = useStyles();
   const [autoComplete, setAutoComplete] = useState(null);
   
-  const onLoad = () => {
+  const onLoad = (autoComplete) => setAutoComplete(autoComplete);
 
-  }
   return (
     <AppBar position='static'>
       <Toolbar className={classes.toolbar}>
