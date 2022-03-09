@@ -13,7 +13,7 @@ const App = () => {
     const [childClicked, setChildClicked] = useState(null)
 
     const [ coordinates, setCoordinates ] = useState({});
-    const [ bounds, setBounds ] = useState( { } );
+    const [ bounds, setBounds ] = useState( {} );
 
     const [isLoading, setIsLoading] = useState(false);
     const [type, setType ] = useState('restaurants');
