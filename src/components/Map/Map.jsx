@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import GoogleMapReact from 'google-map-react';
 import { Paper, Typography, useMediaQuery } from '@material-ui/core';
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
@@ -9,6 +9,7 @@ import useStyle from './styles';
 const Map = ( { setCoordinates, setBounds, coordinates, places, setChildClicked}) => {
     const classes = useStyle();
     const isDesktop = useMediaQuery('(min-width:600px)');
+    const [childClicked, setChildClicked] = useState(null)
 
     
 
