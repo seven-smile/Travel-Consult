@@ -7,7 +7,7 @@ import useStyles from './styles';
 
 const List = ({places, childClicked, isLoading, type, setType, rating, setRating }) => {
   const classes =  useStyles();
-   const [elRefs, setElRefs] = useState([]);
+  const [elRefs, setElRefs] = useState([]);
   
   useEffect(() => {
     const refs = Array(places?.length).fill().map((_, i) => elRefs[i] || createRef());
