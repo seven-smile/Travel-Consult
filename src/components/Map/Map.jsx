@@ -6,6 +6,8 @@ import Rating from '@material-ui/lab/Rating';
 
 import useStyle from './styles';
 
+import mapStyles from './mapStyles';
+
 const Map = ( { setCoordinates, setBounds, coordinates, places, setChildClicked}) => {
     const classes = useStyle();
     const isDesktop = useMediaQuery('(min-width:600px)');
@@ -18,7 +20,7 @@ const Map = ( { setCoordinates, setBounds, coordinates, places, setChildClicked}
                 center={coordinates}
                 defaultZoom={14}
                 margin={[50, 50, 50,50]}
-                options={{disableDefaultUI: true, zoomControl: true }}
+                options={{disableDefaultUI: true, zoomControl: true, styles: mapStyles }}
                 onChange={(e) => {
                     setCoordinates({ lat: e.center.lat, lng: e.center.lng });
                     setBounds( { ne: e.marginBounds.ne, sw: e.marginBounds.sw})
