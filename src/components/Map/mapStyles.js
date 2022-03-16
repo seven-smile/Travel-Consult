@@ -1,4 +1,4 @@
-[
+/*[
     {
         "featureType": "landscape",
         "stylers": [
@@ -101,4 +101,4 @@
             }
         ]
     }
-]
+]*/

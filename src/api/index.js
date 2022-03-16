@@ -23,7 +23,7 @@ export const getPlacesData =  async (type, sw, ne) => {
   }
 }    
 
-export const getWeatherData = async (lat, lng) => {
+/*export const getWeatherData = async (lat, lng) => {
   try { 
     const {data} = await axios.get('http://community-open-weather-map.p.rapidapi')
       params: {lon: lng, lat: lat,},
@@ -37,4 +37,4 @@ export const getWeatherData = async (lat, lng) => {
 } catch (error) {
     console.log(error)
   }
-}
+}*/
