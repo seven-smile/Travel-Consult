@@ -8,7 +8,7 @@ import Map from './components/Map/Map';
 
 const App = () => {
     const [ places, setPlaces] = useState([]);
-    const [filteredPlaces,setFilteredPlaces] = useState([]);
+    const [filteredPlaces, setFilteredPlaces] = useState([]);
 
     const [childClicked, setChildClicked] = useState(null)
 
