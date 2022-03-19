@@ -18,7 +18,7 @@ const Map = ( { setCoordinates, setBounds, coordinates, places, setChildClicked}
                 bootstrapURLKeys={{key: Process.env.REACT_APP_GOOGLE_MAPS_API_KEY  }}
                 defaultCenter={coordinates}
                 center={coordinates}
-                defaultZoom={14};
+                defaultZoom={14}
                 margin={[50, 50, 50,50]}
                 options={{disableDefaultUI: true, zoomControl: true, styles: mapStyles }}
                 onChange={(e) => {
@@ -50,7 +50,7 @@ const Map = ( { setCoordinates, setBounds, coordinates, places, setChildClicked}
                                   <Rating size = "small" value={Number(place.rating)} readOnly/>
                               </Paper>
                           )  
-                        }
+                        }l
                     </div>
                 ))}      
             </GoogleMapReact>
