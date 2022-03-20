@@ -56,7 +56,6 @@ const List = ({places, childClicked, isLoading, type, setType, rating, setRating
       )}
     </div>
   );
-}dhywi wb vbpb
-
+}
 
 export default List;
