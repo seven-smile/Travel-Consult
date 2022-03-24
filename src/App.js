@@ -74,13 +74,3 @@ const App = () => {
     );
 }
 
-export default App; 
-The Data Link layer is responsible for 
-communications between end-device 
-network interface cards.
-• It allows upper layer protocols to access 
-the physical layer media and 
-encapsulates Layer 3 packets (IPv4 
-and IPv6) into Layer 2 Frames.
-• It also performs error detection and 
-rejects corrupts frames
