@@ -1,8 +1,6 @@
 import React, {useState, useEffect, createRef} from "react";
 import { CircularProgress, Grid, Typography, InputLabel, FormControl,Select, MenuItem  } from "@material-ui/core";
-
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
-
 import useStyles from './styles';
 
 const List = ({places, childClicked, isLoading, type, setType, rating, setRating }) => {
