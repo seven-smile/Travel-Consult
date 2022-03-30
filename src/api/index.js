@@ -17,11 +17,11 @@ export const getPlacesData =  async (type, sw, ne) => {
         }
       });
         
-      return data;
-  } catch (error) {
-      console.log(error)
-  }
-}    
+//       return data;
+//   } catch (error) {
+//       console.log(error)
+//   }
+// }    
 
 export const getWeatherData = async (lat, lng) => {
   try {
