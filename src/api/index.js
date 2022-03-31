@@ -17,11 +17,11 @@ import axios from 'axios';
         }
       // });
         
-//       return data;
-//   } catch (error) {
-//       console.log(error)
-//   }
-// }    
+      return data;
+  } catch (error) {
+      console.log(error)
+  }
+}    
 
 export const getWeatherData = async (lat, lng) => {
   try {
