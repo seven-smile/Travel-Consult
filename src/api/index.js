@@ -12,8 +12,8 @@ import axios from 'axios';
          
         },
         headers: {
-          // 'x-rapidapi-host': 'travel-advisor.p.rapidapi.com',
-          // 'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI_KEY
+          'x-rapidapi-host': 'travel-advisor.p.rapidapi.com',
+          'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI_KEY
         }
       });
         
