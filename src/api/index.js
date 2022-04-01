@@ -31,10 +31,10 @@ export const getWeatherData = async (lat, lng) => {
       'X-RapidAPI-Host': 'community-open-weather-map.p.rapidapi.com',
       'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_KEY
     }
-//   });
+  });
 
-//   return data;
-// } catch (error) {
-//   console.log(error)
-// }
-// }
+  return data;
+} catch (error) {
+  console.log(error)
+}
+}
